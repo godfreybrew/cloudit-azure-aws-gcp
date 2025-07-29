@@ -16,7 +16,7 @@ RUN apk upgrade
 RUN pip install --no-cache-dir --upgrade pip==23.3.1 && pip install --no-cache-dir -r requirements.txt
 
 
-# Run the script when the container launches
+# Run the script when container launches
 CMD ["python", "./cloudit.py"]
 
 ################################# EXAMPLES #################################
