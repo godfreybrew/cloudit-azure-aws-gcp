@@ -70,7 +70,7 @@ The *azure* credentials file is called `azure-credentials.json` and it is struct
 ```   
 
 
-The *gcp* credentials file is called `gcp-credentials.json` and it is structured like this:  
+The *gcp* credentials file is called `gcp-credentials.json` and its structured like this:  
 
 ```json
 {
