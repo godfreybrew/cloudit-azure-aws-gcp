@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 
 
-# Google Cloud Audit
+# Audit(Google Cloud)
 def gcp_audit(gcp_credentials_file):
     if os.path.isfile(gcp_credentials_file):
         with open(gcp_credentials_file, 'r') as file:
@@ -20,7 +20,7 @@ def gcp_audit(gcp_credentials_file):
         print(f"The GCP JSON file '{gcp_credentials_file}' does not exist... please add this file with the Azure credentials")
 
 
-# Azure Audit
+# Audit(Azure)
 def azure_audit(azure_credentials_file):
     if os.path.isfile(azure_credentials_file):
         with open(azure_credentials_file, 'r') as file:
@@ -34,7 +34,7 @@ def azure_audit(azure_credentials_file):
         print(f"The Azure JSON file '{azure_credentials_file}' does not exist... please add this file with the Azure credentials")
 
 
-# AWS Audit
+# Audit (AWS)
 def aws_audit(aws_credentials_file):
     if os.path.isfile(aws_credentials_file):
         with open(aws_credentials_file, 'r') as file:
