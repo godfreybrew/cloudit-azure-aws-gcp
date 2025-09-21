@@ -5,7 +5,7 @@
 
 Automatic Cloud Posture Audit Tool ☁️ 🔬  
 
-<img src="docs/images/tool-logo.png" alt="Cloudit Logo" width="250" height="190"> 
+<img width="733" height="533" alt="image" src="https://github.com/user-attachments/assets/623afee1-827e-44cd-a6d3-6a8ce6aaa9b4" />
 
 ## Abstract
 
