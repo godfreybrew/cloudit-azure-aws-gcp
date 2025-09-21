@@ -41,3 +41,51 @@ The *aws* credentials file is called `aws-credentials.json` and it is structured
 }
 ```   
 
+The *azure* credentials file is called `azure-credentials.json` and it is structured like this:  
+
+```json
+{
+    "customers": [
+        {
+            "customer_name": "foo",
+            "SERVICES": ["defender", "iam"],
+            "AZURE_CLIENT_ID": "foo-client-id-here",
+            "AZURE_CLIENT_SECRET": "foo-client-secret-here",
+            "AZURE_TENANT_ID": "foo-tenant-id-here",
+            "AZURE_SUBSCRIPTION_ID":
+            ["foo-subscription-id-1-here"]
+        },
+        {
+            "customer_name": "godfrey",
+            "SERVICES": ["defender", "iam"],
+            "AZURE_CLIENT_ID": "godfrey-client-id-here",
+            "AZURE_CLIENT_SECRET": "godfrey-client-secret-here",
+            "AZURE_TENANT_ID": "godfrey-tenant-id-here",
+            "AZURE_SUBSCRIPTION_ID":
+            ["godfrey-subscription-id-1-here", "godfrey-subscription-id-2-here"]
+        }
+
+    ]
+}
+```   
+
+
+The *gcp* credentials file is called `gcp-credentials.json` and its structured like this:  
+
+```json
+{
+    "customers": [
+        {
+            "customer_name": "customer-name-here",
+            "SERVICES": ["iam", "dns"],
+            "GOOGLE_APPLICATION_CREDENTIALS": "path-to-gcp-sa-json-file-here (eg. credentials/gcp/customer1-gcp-sa.json)"
+        },
+        {
+            "customer_name": "customer-name-here",
+            "SERVICES": ["iam", "dns"],
+            "GOOGLE_APPLICATION_CREDENTIALS": "path-to-gcp-sa-json-file-here (eg. credentials/gcp/customer2-gcp-sa.json)"
+        }
+
+    ]
+}
+```   
