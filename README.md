@@ -89,3 +89,34 @@ The *gcp* credentials file is called `gcp-credentials.json` and its structured l
     ]
 }
 ```   
+
+> [!NOTE]  
+> To inspect available services with prowler run `prowler {provider} --list-services`  
+
+This also want a path to the json file containing all the data for google service account authentication.  
+You can put the files for every sa of every customer inside the `credentials/gcp` folder, and then reference them  
+via the `GOOGLE_APPLICATION_CREDENTIALS` property of the `gcp-credentials.json` file.  
+
+In the future, when the tool will become more mature, it will be almost mandatory to use a proper database engine.  
+
+> [!NOTE]  
+> Before launching the tool remember to install dependencies with `pip3 install -r requirements.txt`  
+
+To launch the tool simply configure the various cloud provider credentials files and then use the following command:  
+```console
+python3 cloudit.py
+```  
+
+When a new git tag is pushed, for example:  
+```console
+ git tag -a v0.0.8 -m "0.0.8" && git push origin v0.0.8
+```  
+A [github action](https://github.com/rooted-io/cloudit/blob/main/.github/workflows/release.yaml) is triggered to produce a github release and a new OCI image that is pushed [here](https://github.com/rooted-io/cloudit/pkgs/container/cloudit).  
+
+
+
+
+At the current time the tool produce for every customer-provider tuple a report in `csv`, `json` and `html` formats (3 files for every report).  
+
+
+
